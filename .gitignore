@@ -1,0 +1,88 @@
+# -----------------------------
+# OS / Editor files
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode-test/
+.idea/
+
+# -----------------------------
+# Logs
+# -----------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -----------------------------
+# Dependencies
+# -----------------------------
+node_modules/
+**/node_modules/
+
+# -----------------------------
+# Build / cache / coverage
+# -----------------------------
+dist/
+build/
+coverage/
+.cache/
+.temp/
+tmp/
+**/dist/
+**/build/
+**/coverage/
+
+# Angular cache/artifacts
+frontend-angular/.angular/
+frontend-angular/.cache/
+frontend-angular/.sass-cache/
+frontend-angular/dist/
+
+# React build artifacts
+frontend-react/build/
+
+# -----------------------------
+# Environment / secrets
+# -----------------------------
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Keep sample env files trackable
+!.env.example
+!.env.sample
+!.env.template
+!**/.env.example
+!**/.env.sample
+!**/.env.template
+
+# -----------------------------
+# Runtime files / uploads
+# -----------------------------
+**/uploads/*
+!**/uploads/.gitkeep
+
+# -----------------------------
+# Local databases / temp runtime
+# -----------------------------
+*.sqlite
+*.sqlite3
+*.db
+*.pid
+*.pid.lock
+*.seed
+
+# -----------------------------
+# Certificates / private keys
+# -----------------------------
+*.pem
+*.key
+*.p12
+*.crt
+*.cer
