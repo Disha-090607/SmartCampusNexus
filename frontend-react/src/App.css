@@ -259,6 +259,168 @@ button {
   border-radius: 10px;
 }
 
+.dashboard-stack {
+  display: grid;
+  gap: 16px;
+}
+
+.analytics-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.tiny-label {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.muted {
+  color: #64748b;
+}
+
+.insight-strip {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.mini-kpi {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.mini-kpi span {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.mini-kpi strong {
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.meter-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.meter-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.meter-track,
+.bar-track {
+  width: 100%;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.meter-track {
+  height: 10px;
+}
+
+.meter-fill {
+  height: 100%;
+}
+
+.bar-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bar-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.bar-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  color: #334155;
+}
+
+.bar-track {
+  height: 22px;
+}
+
+.bar-fill {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0f172a, #334155);
+}
+
+.bar-fill.alt {
+  background: linear-gradient(90deg, #0d6efd, #58a5ff);
+}
+
+.chip-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.grade-chip {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0f172a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ops-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 8px;
+}
+
+.ops-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.ops-card span {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.ops-card strong {
+  font-size: 20px;
+}
+
 @media (max-width: 900px) {
   .layout {
     padding: 14px;
@@ -270,5 +432,13 @@ button {
 
   .inline-form {
     flex-direction: column;
+  }
+
+  .bar-item {
+    grid-template-columns: 1fr;
+  }
+
+  .ops-grid {
+    grid-template-columns: 1fr;
   }
 }

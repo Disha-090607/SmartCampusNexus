@@ -563,7 +563,19 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
-          <Route path="/dashboard" element={<DashboardPage dashboard={dashboard} />} />
+          <Route
+            path="/dashboard"
+            element={
+              <DashboardPage
+                dashboard={dashboard}
+                results={results}
+                notices={notices}
+                complaints={complaints}
+                assignments={assignments}
+                timetable={sortedTimetable}
+              />
+            }
+          />
           <Route
             path="/notices"
             element={
