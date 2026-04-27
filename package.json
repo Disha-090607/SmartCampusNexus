@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "start": "npm run dev",
     "clean-ports": "kill-port 3000 5000",
     "dev": "npm run clean-ports && npm run dev:all",
     "dev:backend": "npm --prefix backend run dev",
